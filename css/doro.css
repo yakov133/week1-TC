@@ -1,0 +1,50 @@
+.body-color{
+    background-color: lightcoral    ;
+}
+.parent{
+    text-align: center;
+    margin-bottom: 25%;
+}
+.child{
+    height: 50%;
+    width: 50%;
+    animation: left-to-right 4s ease-in forwards infinite alternate;
+    animation-delay: 2s;
+}
+.parent .child:hover{
+animation-play-state: paused;
+}
+.parent .child img{
+    width: 70%;
+    height: 70%;
+    margin: -10%;
+    border-radius:50%;
+}
+
+
+table,th,td{   
+    border:2px solid blue;
+}
+table {
+    border-collapse: collapse;
+  }
+
+
+@keyframes left-to-right {  
+ 0%{
+    transform: translateX(0%);
+ }
+ 33%{
+    transform: translateY(100%);
+
+ }
+ 66%{
+    transform: translateY(100%) translateX(100%);
+ }
+ 100%{
+    transform: translateX(100%);
+ }
+
+}
+
+

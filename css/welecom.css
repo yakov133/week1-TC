@@ -1,0 +1,40 @@
+body{
+    background-color: cyan;
+}
+.h1-calss{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10%;
+    animation: welecome--side-to-side 2s alternate infinite;
+}
+body form{
+    margin: 10px;
+}
+body form input:hover{
+    background-color: rgb(101, 101, 211)  ;
+}
+
+
+@keyframes welecome--side-to-side{
+    
+    0%{
+        transform: translateX(0);
+        transform: rotate(0deg);
+        transform-origin:bottom ;
+    }
+    100%{
+        transform: translateX(100%);
+        transform: rotate(360deg);
+        transform-origin:bottom ;
+    }
+}
+@media screen and (max-width: 900px) {
+  
+    .h1-calss{
+        margin: 40%;
+        margin-top: 50%;
+        font-size: 30px;
+    }
+
+    
+}

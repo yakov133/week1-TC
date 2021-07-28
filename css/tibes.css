@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+.slide{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    overflow: hidden;
+}
+
+.slide .card{
+    width: 100%;
+    height:100%;
+    flex-shrink: 0;
+    animation: moveToSide 10s alternate infinite;
+    animation-delay: 3s;
+}
+.slide .card img{
+    width: 80%;
+    height: 80%;
+}
+    
+@keyframes moveToSide {
+0%{
+    transform: translateY(0%);
+}   
+25%{
+    transform: translateY(-100%);  
+} 
+50%{
+    transform: translateY(-200%);
+    
+}
+75%{
+    transform: translateY(-300%);
+    
+}
+100%{
+    transform: translateY(-400%);
+        
+}
+}
+.spaceBetween{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.jumpClass{
+    color: blue;
+}
+.spaceBetween a:active{
+background-color: burlywood;
+}
+
+article h3{
+    text-decoration: underline;
+}
+.centerEveryone{
+    text-align: center;
+}
+
+.center
+{
+ text-align: center;
+ list-style-position: inside;
+}
+ol.center li
+{
+ text-align: left;
+ margin-left: 45%;
+}
+
+main{
+    /* position: relative; */
+}
