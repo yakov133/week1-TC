@@ -46,5 +46,10 @@ table {
  }
 
 }
+@media screen and (max-width: 725px) {
+    table{
+        margin-top: 120%;
+    }
+}
 
 
